@@ -5,7 +5,7 @@ pipeline {
             args '-p 3000:3000'
         }
     }
-    // agent any
+    // a gent any
     tools {nodejs "node"}
     environment {
             CI = 'true'
