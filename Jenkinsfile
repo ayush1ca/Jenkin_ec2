@@ -28,15 +28,16 @@ pipeline {
                 echo 'Visit http://localhost:3000 to see your Node.js/React application in action.'
                 // sh 'npm start'
                 // input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                echo "copy all files "
                 
             }
         }
-        stage('Deploy to NGINX') {
-            steps {
-               sh 'sudo cp -r build/* /var/www/html'
-               sh 'sudo systemctl restart nginx'
-            }
-        }
+        // stage('Deploy to NGINX') {
+        //     steps {
+        //        sh 'scp -r build/* /var/www/html'
+        //        sh 'sudo systemctl restart nginx'
+        //     }
+        // }
 
 
     }
