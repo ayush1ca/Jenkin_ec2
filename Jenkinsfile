@@ -26,7 +26,7 @@ pipeline {
                                 sh 'npm run build'
                                 echo 'Visit http://localhost:3000 to see your Node.js/React application in action.'
                                 sh 'npm start'
-                                input message: 'Finished using the web site? (Colick "Proceed" to continue)'
+                                input message: 'Finished using the web site? (Click "Proceed" to continue)'
                                 
                             }
                         }
